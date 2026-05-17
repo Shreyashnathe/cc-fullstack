@@ -68,6 +68,8 @@ sudo npm install -g pm2
 cd ../backend
 pm2 start server.js --name task-manager-backend
 
+$$$Change project backend name
+
 
 # Check process
 pm2 list
@@ -79,6 +81,12 @@ pm2 save
 
 # Enable auto-start after reboot
 pm2 startup
+
+$$$$$$$$$$$ Copy the Url and then paste in the console
+
+
+
+
 
 # Run the generated command
 
