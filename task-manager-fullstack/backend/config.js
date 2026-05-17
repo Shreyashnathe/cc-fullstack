@@ -11,8 +11,13 @@ sudo apt install -y nodejs npm
 # 3) CLONE GITHUB PROJECT
 git clone https://github.com/Shreyashnathe/cc-fullstack.git
 
+#
+ls
+cd cc-fullstack
+ls
+
 # 4) GO TO PROJECT
-cd cc-fullstack/blog-app
+cd blog-app/
 
 # 5) GO TO BACKEND FIRST
 cd backend
