@@ -42,8 +42,11 @@ JWT_SECRET=mysecretkey
 # 9) START BACKEND SERVER
 node server.js
 
+#
+ctrl + c
+
 # GO TO FRONTEND
-cd ~/cc-fullstack/blog-app/frontend
+cd ../frontend
 
 # 11) INSTALL FRONTEND PACKAGES
 npm install
