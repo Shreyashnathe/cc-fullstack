@@ -2,6 +2,50 @@
 # MERN STACK DEPLOYMENT WITH NGINX REVERSE PROXY
 # UBUNTU EC2
 # ============================================
+# 1) UPDATE UBUNTU
+sudo apt update
+
+# 2) INSTALL NODEJS AND NPM
+sudo apt install -y nodejs npm
+
+# 3) CLONE GITHUB PROJECT
+git clone https://github.com/Shreyashnathe/cc-fullstack.git
+
+# 4) GO TO PROJECT
+cd cc-fullstack/blog-app
+
+# 5) GO TO BACKEND FIRST
+cd backend
+
+# 6) INSTALL BACKEND PACKAGES
+npm install
+
+# 7) CREATE .env FILE
+nano .env
+
+# PASTE THIS INSIDE .env FILE
+
+MONGO_URI=mongodb+srv://natheshreyash_db_user:hxhSt9xdtx7PRwQ9@cluster0.cspxruk.mongodb.net/?appName=Cluster0
+PORT=5000
+JWT_SECRET=mysecretkey
+
+# SAVE:
+# CTRL + O
+# ENTER
+# CTRL + X
+
+# 9) START BACKEND SERVER
+node server.js
+
+# GO TO FRONTEND
+cd ~/cc-fullstack/blog-app/frontend
+
+# 11) INSTALL FRONTEND PACKAGES
+npm install
+
+# 12) BUILD FRONTEND
+npm run build
+
 # --------------------------------
 # STEP 9 — Install PM2
 # --------------------------------
@@ -14,7 +58,6 @@ sudo npm install -g pm2
 # --------------------------------
 
 cd ../backend
-
 pm2 start server.js --name task-manager-backend
 
 
@@ -32,7 +75,6 @@ pm2 startup
 # Run the generated command
 
 pm2 save
-
 
 # --------------------------------
 # STEP 11 — Install NGINX
