@@ -9,11 +9,11 @@ sudo apt update
 sudo apt install -y nodejs npm
 
 # 3) CLONE GITHUB PROJECT
-git clone https://github.com/Shreyashnathe/cc-fullstack.git
+git clone https://github.com/anujop07/taskManager.git
 
 #
 ls
-cd cc-fullstack
+cd taskManager
 ls
 
 # 4) GO TO PROJECT
