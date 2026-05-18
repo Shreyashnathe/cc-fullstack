@@ -163,6 +163,14 @@ sudo nginx -t
 sudo systemctl restart nginx
 
 
+
+#in the browser
+http://public ip
+
+
+
+
+
 # --------------------------------
 # STEP 15 — Open AWS Security Group Ports
 # --------------------------------
