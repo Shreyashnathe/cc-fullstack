@@ -32,7 +32,7 @@ nano .env
 
 MONGO_URI=mongodb+srv://natheshreyash_db_user:hxhSt9xdtx7PRwQ9@cluster0.cspxruk.mongodb.net/?appName=Cluster0
 PORT=5000
-JWT_SECRET=mysecretkey
+NODE_ENV = production
 
 # SAVE:
 # CTRL + O
